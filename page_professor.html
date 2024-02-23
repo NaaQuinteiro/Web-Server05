@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thayná Quinteiro">
+    <title>Portifólio</title>
+</head>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        width: 100%;
+        background-color: #e9ecef;
+    }
+
+    header {
+        display: flex;
+        /* width: 100%; */
+        padding: 3vh;
+        justify-content: space-around;
+        align-items: center;
+        font-family: "Roboto-Condensed", sans-serif;
+        font-size: 14px;
+        color: #ffff;
+        background: linear-gradient(90deg, rgba(15,18,185,1) 14%, rgba(77,15,185,1) 48%, rgba(137,44,236,1) 94%);
+        filter: drop-shadow(5px 5px 5px rgba(0 0 0 / 40%));
+    }
+
+    .nav-bar {
+        display: flex;
+        /* justify-content: center; */
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 10px 0 10px;
+    }
+    .nav-bar h1{
+        padding-right: 120vh;
+        align-items: center;
+    }
+    .nav-bar button {
+        display: flex;
+        padding: 15px 20px 15px 20px;
+        border: none;
+        background-color:#7209B7 ;
+        border-radius: 18px;
+        color: white;
+        font-family: "Roboto-Condensed", sans-serif;
+        font-size: 15px;
+    }
+
+    
+    .nav-bar button:hover {
+        -webkit-filter: drop-shadow(5px 5px 5px rgba(0 0 0 / 40%));
+        filter: drop-shadow(5px 5px 5px rgba(0 0 0 / 40%));
+        transition: 0.5s;
+        background-color: rgba(77,15,185,1);
+    }
+
+
+    .titulos {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: "Roboto-Condensed", sans-serif;
+        font-size: 16px;
+        margin-top: 40px;
+    }
+    
+
+    .titulos button{
+        display: flex;
+        padding:15px 20px 15px 20px;
+		align-items:center;
+		border:none;
+		background-color:#7209B7;
+		border-radius: 20px;
+		color: white;
+		font-family: "Nunito", sans-serif;
+		font-size: 15px;
+    }
+
+    .titulos button:hover {
+        transition: 0.5s;
+        background-color: rgba(77,15,185,1);
+    }
+
+    .titulos p {
+        display: flex;
+        padding-right: 120vh;
+        justify-content: center;
+        align-items: center;
+        font-family: "Roboto-Condensed", sans-serif;
+        font-size: 18px;
+    }
+
+    .tabela {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    table,
+    th,
+    td {
+        border-collapse: collapse;
+        /*define a separação entre as bordar*/
+        padding: 30px;
+        text-align: center;
+        font-family: "Roboto-Condensed", sans-serif;
+        font-size: 17px;
+        border-bottom: 2px solid #495057;
+    }
+
+    button#exclude {
+        width: 100px;
+        background-color:rgba(77,15,185,1);
+        padding: 10px 10px 10px 10px;
+        align-items: center;
+        border: none;
+        font-family: "Roboto-Condensed", sans-serif;
+        font-size: 17px;
+        color: white;
+        border-radius: 18px;
+    }
+
+
+    button#view {
+        width: 100px;
+        background-color: #7209B7;
+        padding: 10px 10px 10px 10px;
+        align-items: center;
+        border: none;
+        font-family: "Roboto-Condensed", sans-serif;
+        font-size: 17px;
+        color: white;
+        border-radius: 18px;
+
+    }
+
+    button#view:hover,
+    button#exclude:hover {
+        transition: 0.1s;
+        background-color: rgba(15,18,185,1);
+    }
+
+    a{
+        text-decoration: none;
+    }
+</style>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-bar">
+               
+                <h1>Bem vindo(a) professor, cadastre sua turma!</h1>
+                <button>SAIR</button>
+               
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="titulos">
+           <p>Professor(a): Fernanda Fretes</p>  <!-- aqq o servidor vai ter que jogar o nome inserido no cadastro -->
+           <button>CADASTRAR</button>
+        </div>
+
+        <div class="tabela">
+            <table>
+
+                <tr>
+                    <th>Número</th>
+                    <th>Turma</th>
+                    <th>Ação</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Desenvolvimento de Sistemas</td>
+                    <td>
+                        <button id="exclude">Excluir</button>
+                        <button id="view">Vizualizar</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Mecatronica</td>
+                    <td>
+                        <button id="exclude">Excluir</button>
+                        <button id="view">Vizualizar</button>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+    </main>
+
+
+</body>
+</body>
+
+</html>

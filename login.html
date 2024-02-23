@@ -1,0 +1,122 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Thayná Quinteiro">
+		<title>Login</title>
+	</head>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+
+		body {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #caf0f8;
+			font-family: "Raleway", sans-serif;
+			background-image: url('/fundo_login.svg');
+			background-size: cover;
+			background-position: center;
+		}
+
+		form {
+			width: 30rem;
+			display: flex;
+			flex-direction: column;
+			border-radius: 25px;
+			justify-content: center;
+			background-color: #fff;
+		}
+
+		h1 {
+			padding-top: 30px;
+			display: flex;
+			justify-content: center;
+			color: black;
+		}
+
+		input {
+			display: flex;
+			justify-content: center;
+			width: 370px;
+			margin-bottom: 15px;
+			font-size: 16px;
+			border-radius: 15px;
+			padding: 10px;
+			border: none;
+			background-color: #f2f2f2;
+			margin-left: 55px;
+		}
+
+		input:focus {
+			outline: none;
+		}
+
+		input:hover,
+		button:hover {
+			transition: all 0.s ease;
+		}
+
+		label {
+			display: flex;
+			width: 280px;
+			font-size: 18px;
+			padding-left: 10px;
+			margin-left: 55px;
+			color: black;
+			font-weight: bold;
+		}
+
+
+		button {
+			display: flex;
+			width: 90px;
+			justify-content: center;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			border: none;
+			border-radius: 15px;
+			background: linear-gradient(90deg, rgba(15,18,185,1) 14%, rgba(77,15,185,1) 48%, rgba(137,44,236,1) 94%);
+			color: #fff;
+			font-size: 15px;
+			margin-top: 10px;
+			margin-bottom: 40px;
+			margin-left: 200px;
+			font-size: 17px;
+			font-family: "Raleway", sans-serif;
+		}
+
+		.error-message{
+			display: flex;
+			justify-content: center;
+			margin-top: 7px;
+			color:rgb(68, 25, 107);
+		}
+	</style>
+
+	<body>
+		<div>
+			<form action="/enviar_login" method="post">
+				<h1>LOGIN</h1>
+				<label for="email">E-mail</label>
+				<input type="text" name="email" placeholder="Informe seu email">
+				<label for="password">Senha</label>
+				<input type="password" name="senha" placeholder="Informe sua senha">
+				<button id="enviar">Sigin</button>
+			</form>
+
+			<div class="error-message">
+				<!--Mensagem de erro inserida aqui-->
+			</div>
+
+		</div>	
+	</body>
+
+</html>
